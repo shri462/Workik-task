@@ -10,9 +10,9 @@ const Burger = ({ open, setOpen }) => {
   const listenScrollEvent = (event) => {
     if (window.scrollY < 100) {
       return setSecondary("#03A9F4");
-    } else if (window.scrollY < 650) {
+    } else if (window.scrollY < 600) {
       return setSecondary("#FFF");
-    } else if (window.scrollY > 650) {
+    } else if (window.scrollY > 600) {
       return setSecondary("#03A9F4");
     }
   };
