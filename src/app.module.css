@@ -1,0 +1,90 @@
+.app{
+    display: flex;
+    height: 100vh;
+}
+.section1 {
+    width: 50%;
+    background-color: #03A9F4;
+    color: #FFF;
+}
+.section1content {
+    margin: 100px;
+    font-size: 20px;
+}
+.section1content h1{
+    line-height: 1.1;
+    font-size: 50px;
+    font-family: 'Comfortaa', cursive;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.circle {
+    padding: 10px;
+    margin-right: 25px;
+    color: #03A9F4;
+    border-radius: 50%;
+    background-color: #FFF;
+    display: grid;
+    place-items: center;
+}
+.section2 {
+    width: 50%;
+    margin: 100px auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .app {
+      flex-direction: column;
+      margin-top: 100px;
+
+    }
+    .section1{
+        width: 100%;
+    }
+    .section2{
+        width: 100%;
+    }
+    .section1content {
+        margin: 50px;
+        font-size: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .app {
+        flex-direction: column;
+        margin-top: 100px;
+  
+      }
+      .section1{
+          width: 100%;
+      }
+      .section2{
+          width: 100%;
+      }
+      .section1content {
+          margin: 50px;
+          font-size: 20px;
+      }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .app {
+        flex-direction: row;
+        margin-top: 0px;
+  
+      }
+      .section1{
+          width: 50%;
+      }
+      .section2{
+          width: 50%;
+      }
+      .section1content {
+          margin: 100px;
+          font-size: 20px;
+      }
+  }

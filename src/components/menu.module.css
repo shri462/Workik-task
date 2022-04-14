@@ -1,0 +1,40 @@
+
+.menu {
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 4rem);
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #03A9F4;
+    animation: slide-in 1s ease-in-out;
+  }
+  a {
+    color: #FFF;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    text-decoration: none;
+  }
+
+  @keyframes slide-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+  @media only screen and (max-width: 600px) {
+    .menu {
+      
+        width: calc(100% - 4rem);
+
+    }
+  }
